@@ -407,7 +407,6 @@ x_approx_sc=pca.inverse_transform(xpc)
 x_approx=scaler.inverse_transform(x_approx_sc)
 
 print("-- MSE",mean_squared_error(x,x_approx))
-#طلع  0.062 ضعيف اوى دا عادى ؟
 
 print('----------Seperate----------')
 
@@ -445,4 +444,5 @@ xpc=pca.fit_transform(x_scaled)
 
 scatter=plt.scatter(xpc[:,0],xpc[:,1],cmap='coolwarm',alpha=0.8,s=50)
 plt.colorbar(scatter,label='Target')
+
 plt.show()
